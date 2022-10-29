@@ -20,7 +20,7 @@ exec 1>&2
 
 
 if 
-	test $(git grep -c unpkg\.com) != 0
+	test $(git grep -c unpkg\.com) != ""
 then
 	cat <<\EOF
 Error: Attempt to add a non-ASCII file name.
