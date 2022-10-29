@@ -1,0 +1,7 @@
+{
+  "name": "git-commit-guard",
+  "packageManager": "yarn@3.2.4",
+  "scripts": {
+    "preinstall": "git config core.hooksPath git_hooks"
+  }
+}
