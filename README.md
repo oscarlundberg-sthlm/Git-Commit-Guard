@@ -1,6 +1,6 @@
 # Git-Commit-Guard
 
-Blocks commit if files contain the string "unpkg.com"
+Writes a warning message on git commit if files contain the string "unpkg.com"
 
 1. Copy/paste the git_hooks directory into your project root directory
 
