@@ -18,7 +18,7 @@ exec 1>&2
 
 
 
-SEARCHRESULT=$(git grep -c unpkg\.com -- ':(exclude)/.yarn')
+SEARCHRESULT=$(git grep -c unpkg\.com -- ':(exclude)./.yarn' ':(exclude)./README.md')
 
 if test -n "${SEARCHRESULT}";
 then
