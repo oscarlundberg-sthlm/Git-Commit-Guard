@@ -23,7 +23,7 @@ SEARCHRESULT=$(git grep -c unpkg\.com -- ':(exclude)./.yarn' ':(exclude)./README
 if test -n "${SEARCHRESULT}";
 then
 	cat <<EOF
-Inly warning: unpkg found
+Warning: unpkg found
 
 -----
 
