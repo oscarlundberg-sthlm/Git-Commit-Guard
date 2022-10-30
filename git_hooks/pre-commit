@@ -18,7 +18,7 @@ exec 1>&2
 
 
 
-SEARCHRESULT=$(git grep -c unpkg\.com)
+SEARCHRESULT=$(git grep -c unpkg\.com -- ':(exclude)/.yarn')
 
 if test -n "${SEARCHRESULT}";
 then
@@ -32,5 +32,7 @@ $SEARCHRESULT
 -----
 
 EOF
-	exit 0
+	# exit 1 to abort commit
+	# exit 0 to only print warning message
+	exit 1
 fi
